@@ -1,0 +1,28 @@
+.container {
+    width: 40%;
+    margin: auto;
+}
+
+.container div {
+    background-color: aqua;
+    border-top: 2px green solid;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: red;
+    transition: height 1s;
+}
+
+.container div:hover {
+    height: 120px;
+    background-color: rgb(206, 138, 12);
+}
+
+p {
+    transition: 2s;
+}
+
+p:hover {
+    font-size: 2rem;
+}
