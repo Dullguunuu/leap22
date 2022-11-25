@@ -1,0 +1,23 @@
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 2s;
+    border: none;
+}
+
+.box1:focus {
+    width: 100vw;
+
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 2s;
+}
+
+.box2:hover {
+    width: 100vw;
+}

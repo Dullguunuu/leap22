@@ -1,0 +1,105 @@
+body
+{
+    background-color: rgba(109, 85, 196, 0.82);  
+}
+
+p::after
+{
+    content: "Web 1024px -->";
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+p::after
+{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+
+img
+{
+    width: 400px;
+    height: 300px;
+    border: 20px solid grey;
+}
+
+#img2, #img3
+{
+    display: none ;
+}
+
+@media screen and (max-width: 1024px)
+{
+    body
+    {
+        background-color: rgb(230, 141, 156);
+    }
+
+    p::after
+    {
+        content: "Tablet 768px --> 1024px";
+        border-radius: 0;
+    }
+
+    #img2
+    {
+        display: block;
+    }
+
+    #img1, #img3
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    body
+    {
+        background-color: rgb(137, 193, 85);
+    }
+
+    p::after
+    {
+        content: "Mobile 425px --> 768px";
+        border-radius: 0;
+    }
+
+    #img3
+    {
+        display: block;
+    }
+
+    #img1,#img2
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px)
+{
+    body
+    {
+        background-color: white;
+    }    
+
+    #img3
+    {
+        display: none;
+    }
+
+    p
+    {
+        display: none;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular form</title>
+
+    <style>
+    .form-group
+    {
+        margin: 10px;
+        display: flex;
+        gap: 20px;
+    }
+    label
+    {
+        width: 150px;
+        text-align: right;
+    }
+
+    input:invalid,
+    input:out-of-range {
+      border-color: red;
+    }
+    </style>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Hi form</legend>
+        <div class="form-group">
+            <label for="Нэр">Нэр</label>
+            <input type="text" name="Нэр">
+        </div>
+        <div class="form-group">
+            <label for="Овог">Овог</label>
+            <input type="text" name="Овог">
+        </div>
+        <div class="form-group">
+            <label for="И-Мэйл">И-Мэйл</label>
+            <input type="email" name="И-Мэйл">
+        </div>
+        <div class="form-group">
+            <label for="Утас">Утас</label>
+            <input type="number" name="Утас">
+        </div>
+        <div class="form-group">
+            <label for="Нас">Нас</label>
+            <input type="number" name="Нас" min="6" max="18">
+        </div>
+        <div class="form-group">
+            <label for="Төрсөнөдөр">Төрсөн өдөр</label>
+            <input type="date" name="Төрсөнөдөр" min="">
+        </div>
+        <div class="form-group">
+            <label for="Хүйс">Хүйс</label>
+            <select name="Хүйс">
+                <option value="0">Сонгох...</option>
+                <option value="1">Эрэгтэй</option>
+                <option value="2">Эмэгтэй</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Тодорхойлолт">Тодорхойлолт</label>
+            <input type="text" name="Тодорхойлолт">
+        </div>
+        <div class="form-group">
+            <label for="Нас">Сурагч эсэх</label>
+            <div>
+            <input type="checkbox" name="Сурагч">
+            <label for="Сурагч">Тийм</label>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+</body>
+</html>

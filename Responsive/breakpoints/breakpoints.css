@@ -1,0 +1,121 @@
+body
+{
+<<<<<<< HEAD
+  background-color: rgba(231, 61, 61, 0.755);
+  height: 100vh;
+  width: 100vw;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+body::after
+{
+    content: "xxl(extra extra large)=>1400px";
+}
+
+@media (max-width: 1400px) {
+    body {
+      background-color: rgba(253, 91, 91, 0.663);
+    }
+    body::after
+  {
+    content: "xxl(extra extra large)=>1200px";
+  }
+  }
+
+  @media (max-width: 1200px) {
+    body {
+      background-color: rgba(255, 0, 0, 0.298);
+    }
+    body::after{
+      content: "lg (large) => 992px";
+    }
+  }
+
+  @media  (max-width: 992px) {
+    body {
+      background-color: aqua;
+    } 
+    body::after{
+      content: " md (medium) => 768px";
+    }
+  }
+
+  @media (max-width: 768px) {
+    body {
+      background-color: brown;
+    } 
+    body::after{
+      content: "sm  (small) => 576px";
+    }
+  }
+
+  @media (max-width: 576px) 
+  {
+    body {
+      background-color: green;
+    }
+    body::after
+    {
+      content: "xs ( extra small ) < 576px" ;
+    }
+  } 
+=======
+    background-color: rgb(250, 112, 112);
+    text-align: center;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px)
+{
+    body{
+        background-color: rgb(236, 47, 47);
+    }
+
+    div:after
+    {
+        content: xl (extra large) => 1200px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    body{
+        background-color: pink;
+    }
+
+    /* content: "lg (large) => 992px"; */
+}
+
+@media (min-width: 768px)
+{
+    body{
+        background-color: aqua;
+    }
+
+    /* content: "sm  (small) => 576px"; */
+}
+
+@media (min-width: 576px)
+{
+    body{
+        background-color: brown;
+    }
+
+    /* content: "md (medium) => 768px"; */
+}
+
+
+@media (max-width: 576px)
+{
+    body{
+        background-color: green;
+    }
+
+    body::after
+    {
+        content: xs ( extra small ) < 576px";
+    }
+    /* content: "xs ( extra small ) < 576px"; */
+}
+>>>>>>> eb80f284dee50b57079ca0c9c38bdb0237b140e9

@@ -1,0 +1,100 @@
+body
+{
+    background-color: rgba(137, 176, 223);
+    display: flex;
+}
+
+.left
+{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+}
+
+.left h1
+{
+    color: rgb(38, 84, 157);
+}
+
+.left input, .left select
+{
+    width: 90%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    background-color: #fff;
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.left ::placeholder, select, #date
+{
+    color: rgb(224, 224, 224); 
+    font-weight: 500;
+}
+
+.left-flex
+{
+    display: flex;
+}
+
+.left select
+{
+    color: black;
+}
+
+
+.right
+{
+    background-color: rgb(58, 58, 193);
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
+}
+
+.right h1
+{
+    color: #fff;
+    margin-left: 20px;
+}
+
+.right-texts input, .right select
+{
+    width: 90%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    background-color: rgb(58, 58, 193);
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.right ::placeholder, select
+{
+    color: #fff; 
+    font-weight: 500;
+}
+
+.flex
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.terms-and-con
+{
+    color: #fff;
+    margin: 10px 20px;
+}
+
+.terms-and-con a
+{
+    color: #fff;
+}
+
+.submitbutton input
+{
+    padding: 10px;
+    border-radius: 50px;
+    margin: 20px;
+}
+

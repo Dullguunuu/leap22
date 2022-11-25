@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Assignment</title>
+<style>
+    form
+    {
+        border: 1px solid grey;
+        border-radius: 20px;
+    }
+    .form-groups
+    {
+        padding: 10px 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .labels
+    {
+        width: 100px;
+        text-align: right;
+    }
+
+    .inputs
+    {
+        width: 200px;
+    }
+
+    #button{
+        margin-left: 110px;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <form action="">
+    <div class="form-groups">
+        <div class="labels"><label for="name">Name:</label></div>
+        <input type="text" name="name" class="inputs">
+    </div>
+    <div class="form-groups">
+        <div class="labels"><label for="email">E-mail:</label></div>
+        <input type="email" name="email" class="inputs">
+    </div>
+    <div class="form-groups">
+        <div class="labels"><label for="name">Message:</label></div>
+        <textarea name="message" rows="10" class="inputs"></textarea>
+    </div>
+    <div class="form-groups">
+    <input type="button" id="button" value="Send your message">
+    </div>
+    </form>
+</body>
+</html>
