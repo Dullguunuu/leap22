@@ -1,0 +1,79 @@
+.container
+{
+    border: 1px grey solid;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.w-box
+{
+    width: 100px;
+    height: 100px;
+    background: white;
+    box-shadow: 0 0 20px lightgray;
+    z-index: -1;
+}
+
+.pink-box
+{
+    width: 100px;
+    height: 100px;
+    background: rgb(241, 135, 153);
+    opacity: 0.3;
+    z-index: 1;
+    transition: all 1s;
+    position: absolute;
+}
+
+.pink1{
+    top: 140px;
+    left: 140px;
+}
+
+.pink2{
+    top: 140px;
+    right: 140px;
+}
+
+.pink3
+{
+    bottom: 140px;
+    left: 140px;
+}
+
+.pink4
+{
+    bottom: 140px;
+    right: 140px;
+}
+
+.container:hover .pink1 {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
+.container:hover .pink2 {
+    top: 0px;
+    right: 0px;
+    opacity: 1;
+}
+
+.container:hover .pink3 {
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
+.container:hover .pink4 {
+    bottom: 0px;
+    right: 0px;
+    opacity: 1;
+}
