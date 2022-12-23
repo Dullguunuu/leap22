@@ -1,7 +1,13 @@
 body
 {
     background-color: rgba(137, 176, 223);
+}
+
+.main
+{
     display: flex;
+    justify-content: center;
+    margin: 50px;
 }
 
 .left

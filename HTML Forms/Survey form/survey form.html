@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,49 +8,83 @@
     <link href="survey form.css" rel="stylesheet">
     <title>Survey form</title>
 </head>
-<body>
-    <div>
-        <h1>Social media хэрэглэгчдийн судалгаа</h1>
-        <p>Судалгаанд оролцсон таньд баярлалаа.</p>
-    <fieldset>
-        <legend>Ерөнхий мэдээлэл</legend>
-        <form action="">
-            <label for="нэр">Нэр</label>
-            <input type="text" name="нэр">
-            <label for="имэйл">И-Мэйл</label>
-            <input type="email" name="имэйл">
-            <label for="нас">Нас</label>
-            <input type="number" name="нас">
-        </form>
-    </fieldset>
-    <fieldset>
-        <legend>Social media</legend>
-        <form action="">
-            <div>
-            <label for="цаг">Та өдөрт хэдэн цаг social media ашигладаг вэ?</label>
-            <select name="цаг">
-                <option value="0">1-2 цаг</option>
-                <option value="1">2-3 цаг</option> 
-                <option value="2">3-4 цаг</option> 
-                <option value="3">5-6 цаг</option>
-                <option value="4">6-7 цаг</option> 
-                <option value="5">7-8 цаг</option> 
-                <option value="6">8 цагаас дээш</option> 
-            </select>
-            </div>
-            <div>
-            <label for="choice">Та онлайнаар худалдан авалт хийх, дэлгүүр орж худалдан авалт хийхийн альныг илүүд үздэг вэ?</label>
-            <label for="онлайн">Онлайн худалдан авалт</label>
-            <input type="radio" name="онлайн">
-            <label for="онлайн">Онлайн худалдан авалт</label>
-            <input type="radio" name="онлайн">
-            </div>
-            <div>
-                
-            </div>
-        </form>
-    </fieldset>
 
-</div>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 style="margin-bottom: 0;">Social media хэрэглэгчдийн судалгаа</h1>
+            <p  style="margin-top: 0; margin-bottom: 10px;">Судалгаанд оролцсон таньд баярлалаа.</p>
+        </div>
+        <div class="survey">
+            <fieldset>
+                <legend>Ерөнхий мэдээлэл</legend>
+                <form class="general">
+                    <div class="fName gaps">
+                        <label for="нэр">Нэр</label><br>
+                        <input type="text" name="нэр" class="inputs">
+                    </div>
+                    <div class="e-mail gaps">
+                        <label for="имэйл">И-Мэйл</label><br>
+                        <input type="email" name="имэйл" class="inputs">
+                    </div>
+                    <div class="age gaps">
+                        <label for="нас">Нас</label><br>
+                        <input type="number" name="нас" class="inputs">
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Social media</legend>
+                <form>
+                    <div class="spentHr gaps">
+                        <label for="цаг">Та өдөрт хэдэн цаг social media ашигладаг вэ?</label><br>
+                        <select name="цаг" class="inputs">
+                            <option value="0">1-2 цаг</option>
+                            <option value="1">2-3 цаг</option>
+                            <option value="2">3-4 цаг</option>
+                            <option value="3">5-6 цаг</option>
+                            <option value="4">6-7 цаг</option>
+                            <option value="5">7-8 цаг</option>
+                            <option value="6">8 цагаас дээш</option>
+                        </select>
+                    </div>
+                    <div class="prefer gaps">
+                        <p>Та онлайнаар худалдан авалт хийх, дэлгүүр орж худалдан авалт хийхийн альныг
+                            илүүд үздэг вэ?</p>
+                        <input type="radio" name="byOnline">
+                        <label for="byOnline">Онлайн худалдан авалт</label><br>
+                        <input type="radio" name="shopping">
+                        <label for="shopping">Дэлгүүр орж худалдан авалт хийх</label>
+                    </div>
+                    <div class="chosenPlatform gaps">
+                        <p>Та ямар social media platform ашигладаг вэ?</p>
+                        <input type="checkbox" id="platform1" name="platform1" value="socialPlatform">
+                        <label for="platform1">Facebook</label><br>
+                        <input type="checkbox" id="platform2" name="platform2" value="socialPlatform">
+                        <label for="platform2">Instagram</label><br>
+                        <input type="checkbox" id="platform3" name="platform3" value="socialPlatform">
+                        <label for="platform3">Twitter</label><br>
+                        <input type="checkbox" id="platform4" name="platform4" value="socialPlatform">
+                        <label for="platform4">Reddit</label><br>
+                        <input type="checkbox" id="platform5" name="platform5" value="socialPlatform">
+                        <label for="platform5">Snapchat</label><br>
+                        <input type="checkbox" id="platform6" name="platform6" value="socialPlatform">
+                        <label for="platform6">Quora</label><br>
+                        <input type="checkbox" id="platform7" name="platform7" value="socialPlatform">
+                        <label for="platform7">Youtube</label><br>
+                        <input type="checkbox" id="platform8" name="platform8" value="socialPlatform">
+                        <label for="platform8">Бусад</label><br>
+                    </div>
+                </form>
+            </fieldset>
+            <div class="anyReq gaps">
+                <p>Санал хүсэлт</p>
+                <textarea rows="10" class="inputs">Санал хүсэлтээ энд бичнэ үү...</textarea>
+                <button type="submit">Илгээх</button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
 </body>
+
 </html>
